@@ -18,7 +18,7 @@
 <nav class="navbar navbar-inverse navbar-dark bg-navbar navbar-static-top navbar-expand-md mb-3">
 <div class="container">
 <a class="navbar-brand text-purple" href="/">
-<img src="https://dev16.nobelium.xyz/img/Dev16.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">
+<img src="/3D820D4D-C38A-4D6B-A4AD-0B458E7BB716.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">
 Dev16
 </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
