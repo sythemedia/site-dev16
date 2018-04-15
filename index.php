@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="JIeIUkM7g5awhrlhWsEH3Yf8OvPZpv6fNxw6BwYj">
+<title>Dev16</title>
+<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/v4-shims.js"></script>
+<link rel="stylesheet" href="https://dev16.nobelium.xyz/css/app.24d62c45a85b4624c89898aefbe2949e.css">
+<script>
+        window.Dev16 = {"csrfToken":"JIeIUkM7g5awhrlhWsEH3Yf8OvPZpv6fNxw6BwYj"}
+    </script>
+</head>
+<body>
+<div id="app">
+<nav class="navbar navbar-inverse navbar-dark bg-navbar navbar-static-top navbar-expand-md mb-3">
+<div class="container">
+<a class="navbar-brand text-purple" href="/">
+<img src="https://dev16.nobelium.xyz/img/Dev16.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">
+Dev16
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbar-collapse">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item"><a class="nav-link" href="https://dev16.nobelium.xyz">Home</a></li>
+</ul>
+<ul class="navbar-nav">
+<li class="nav-item"><a href="https://dev16.nobelium.xyz/login" class="nav-link">Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="sidebar">hello world</div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-8">
+<div class="card">
+<div class="card-header">Client Helper</div>
+<div class="card-body">
+<form>
+<div class="form-group">
+<label for="ip_address">IP Address</label>
+<input type="text" value="127.0.0.1" class="form-control" id="ip_address" placeholder="IP address">
+</div>
+<div class="form-group">
+<label for="port">Port</label>
+<input type="number" value="53640" class="form-control" id="port" placeholder="Port">
+</div>
+<div class="form-group">
+<label for="username">Username</label>
+<input type="text" class="form-control" id="username" placeholder="Username">
+</div>
+<div class="form-group">
+<label for="userid">User ID</label>
+<input type="text" class="form-control" id="userid" placeholder="User ID">
+</div>
+<button type="button" class="btn btn-lg btn-success btn-block" id="openAction">Play</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://dev16.nobelium.xyz/js/app.9ec8488cfd2f9df9a255.js"></script>
+<script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+<script>
+        document.getElementById("openAction").onclick = function() {
+            var ip = document.getElementById("ip_address").value;
+            var port = document.getElementById("port").value;
+            var username = document.getElementById("username").value;
+            var uid = document.getElementById("userid").value;
+            window.location = "dev16:1+gameinfo:none+nobeopen:" + encodeURIComponent("http://fi.nobelium.xyz/game/join.ashx?ip=" + ip + "&port=" + port + "&username=" + username + "&uid=" + uid);
+        }
+    </script>
+</body>
+</html>
